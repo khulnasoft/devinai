@@ -4,10 +4,17 @@ import { languages } from '@codemirror/language-data'
 import { colorPicker } from '@replit/codemirror-css-color-picker'
 
 // TODO - when you have time to write a script or something
+enum CodeMirrorMode {
+    CLIKE = 'clike',
+    SHELL = 'shell',
+    XML = 'xml',
+    // ... other modes
+}
+
 export const codeMirrorLanguages = {
     'AGS Script': {
         color: '#B9D9FF',
-        codeMirrorMode: 'clike',
+        codeMirrorMode: CodeMirrorMode.CLIKE,
         extensions: ['*.asc', '*.ash'],
         mimetypes: ['text/x-c++src'],
     },
