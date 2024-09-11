@@ -14,9 +14,6 @@ if ! command_exists unzip; then
     exit 1
 fi
 
-wget https://khulnasoft.com/resources.zip
-wget https://khulnasoft.com/lsp.zip
-
 unzip resources.zip
 unzip lsp.zip
 
