@@ -111,10 +111,7 @@ config.json
 
 out/
 build/
-/lsp/
 settings.json
-resources/**
-lsp/**
 *.zip
 scripts/**
 
