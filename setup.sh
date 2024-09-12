@@ -13,12 +13,3 @@ if ! command_exists unzip; then
     echo "unzip is not installed. Please install unzip to use this script."
     exit 1
 fi
-
-wget https://khulnasoft.com/resources.zip
-wget https://khulnasoft.com/lsp.zip
-
-unzip resources.zip
-unzip lsp.zip
-
-rm ./resources.zip
-rm ./lsp.zip
